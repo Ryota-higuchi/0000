@@ -2,67 +2,160 @@
 
 body {
   margin: 0;
+  animation: fade-in 1.5s ease-out forwards;
+}
+
+img {
+  width: 100%;
 }
 
 /* header */
 
-header {
-  background: #8080804a;
-  text-align: center;
-  padding: 30px 0;
+
+section {
+  width: 109px;
+  line-height: 1px;
+  margin: 36px auto;
 }
 
-header img {
-  border-radius: 50%;
+.top {
+  margin: 0 auto 30px auto;
+  width: calc(100% - 32px);
+  display: flex;
+  justify-content: space-between;
+  overflow-x: scroll;
 }
 
-h1 {
-  font-weight: normal;
-  font-size: 24px;
-  margin: 30px 0 0;
+.all {
+  display: flex;
 }
 
-header p {
+.all a {
+  margin-right: 16px;
+}
+
+.login a {
+  margin-left: 16px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
   margin: 0;
 }
 
-/* works */
+li a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 12px;
+  opacity: .7;
+}
 
-section {
-  width: 400px;
+/* main */
+
+main {
+  
+}
+
+.hero-right {
+  width: calc(100% - 32px);
   margin: 0 auto;
 }
 
-h2 {
-  font-weight: normal;
-  text-align: center;
-  margin-top: 64px;
-}
-
-div {
-  margin-top: 64px;
-}
-
-h3 {
-  font-weight: normal;
-}
-
-/* footer */
-
-footer {
-  padding: 64px 0;
-  margin-top: 64px;
-  border-top: 1px solid gray;
-  text-align: center;
+.hero-right h2 {
+  font-size: 16px;
+  padding: 24px 0;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
 small {
-  color: rgba(128, 128, 128, 0.404);
-}
-nav {
-  margin-top: 16px;
+  font-size: 12px;
+  opacity: .7;
 }
 
-a:hover {
-  opacity: .7;
+p {
+  font-size: 12px;
+  margin: 32px 0;
+}
+
+button {
+  width: 100%;
+  margin: 30px 0;
+  background: gray;
+  padding: 16px 0;
+}
+
+button a {
+  text-decoration: none;
+  color: inherit;
+}
+
+table {
+  border: 1px solid black;
+  text-align: center;
+}
+
+th {
+  font-weight: normal;
+  border: 1px solid black;
+}
+
+td {
+  border: 1px solid black;
+}
+
+select {
+  width: 100%;
+}
+
+.color1 {
+  width: 200px;
+}
+
+.size2 {
+  width: 200px;
+}
+.space3 {
+  width: 300px;
+}
+
+.s1 {
+  width: 200px;
+}
+
+.s2 {
+  width: 200px;
+}
+
+.s3 {
+  width: 200px;
+}
+.s4 {
+  width: 200px;
+}
+
+footer {
+  margin-top: 80px;
+  text-align: center;
+}
+
+@keyframes fade-in {
+  0% {
+    transform: translateY(-60px);
+    opacity: 0; 
+  }
+
+  100% {
+    transform: translateY(0);
+    opasity: 1;
+  }
+}
+
+@media(min-width:600px) {
+  body {
+    max-width: 600px;
+    margin: 0 auto;
+  }
 }
