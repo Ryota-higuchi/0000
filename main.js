@@ -36,26 +36,26 @@
   play();
 }
 
-{
-  function callback(entries, obs) {
-    entries.forEach(entry => {
-      if(!entry.isIntersecting) {
-        return;
-      }
+// {
+//   function callback(entries, obs) {
+//     entries.forEach(entry => {
+//       if(!entry.isIntersecting) {
+//         return;
+//       }
 
-      entry.target.classList.add("appear");
-      obs.unobserver(entries.target);
-    });
-  }
+//       entry.target.classList.add("appear");
+//       obs.unobserver(entries.target);
+//     });
+//   }
 
-  const options = {
-    threshold: 0.2,
-  };
+//   const options = {
+//     threshold: 0.2,
+//   };
 
-  const observer = new IntersectionObserver(callback, options);
-  const targets = document.querySelectorAll(".animate");
+//   const observer = new IntersectionObserver(callback, options);
+//   const targets = document.querySelectorAll(".animate");
 
-  targets.forEach(target => {
-    observer.observe(target);
-  });
-}
+//   targets.forEach(target => {
+//     observer.observe(target);
+//   });
+// }
