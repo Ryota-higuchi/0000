@@ -4,29 +4,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>スニーカーショッピングサイト</title>
+  <title>HIGUCHI RYOTA</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="icon" href="icon.jpg">
+  <meta name="description" content="樋口　凌太の自己紹介サイト">
+  <meta name="keyword" content="樋口凌太">
 </head>
 
 <body>
   <header>
-    <div class="logo">
-      <h1>スニーカーショッピング</h1>
-      <div class="pc-menu">
-        <nav>
-          <ul>
-            <li><a href="#">ホーム</a></li>
-            <li><a href="#">商品一覧</a></li>
-            <li><a href="#">お問い合わせ</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-
-    
-
+    <h1>RYOTA HIGUCHI</h1>
+    <ul>
+      <li class="wor"><a href="#works">WORKS</a></li>
+      <li class="ski"><a href="#skill">SKILL</a></li>
+      <li class="abo"><a href="#about">ABOUT</a></li>
+      <li class="con"><a href="#contact">CONTACT</a></li>
+    </ul>
     <div class="sp-menu">
       <span class="material-icons" id="open">menu</span>
     </div>
@@ -35,86 +28,103 @@
   <div class="overlay">
     <span class="material-icons" id="close">close</span>
     <nav>
-      <li><a href="#">ホーム</a></li>
-      <li><a href="#">商品一覧</a></li>
-      <li><a href="#">お問い合わせ</a></li>
+      <li><a href="#works">WORKS</a></li>
+      <li><a href="#skill">SKILL</a></li>
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#contact">CONTACT</a></li>
     </nav>
   </div>
-
-  <main class="main">
-    <img src="main-1.jpg" alt="画像" class="current">
-    <img src="main-2.jpg" alt="画像">
-    <img src="main-3.jpg" alt="画像">
-    <h2>毎月20日は感謝デー<br>
-      <span class="yellow">エントリーで最大ポイント4倍</span>
-    </h2>
-  </main>
-
-  <section class="heros">
-    <div class="hero animate sr">
-      <div class="gazo">
-        <img src="hero-1.jpg" alt="画像" width="100%" height="270">
+  </header>
+  <section class="main-img">
+    <img src="main-img1.jpg" alt="画像１" class="current">
+    <img src="main-img2.jpg" alt="画像２">
+    <img src="main-img3.jpg" alt="画像３">
+    <!-- もじ -->
+    <h1>RYOTA HIGUCHI</h1>
+    <p>貴方の人生に何か届ければと思ってweb制作をしております。<br>デザインやコーディングのことならお任せください。</p>
+  </section>
+  <section class="works animate sr">
+    <div class="width">
+      <h2 id="works">WORKS</h2>
+      <div class="flex">
+        <div class="container">
+          <a href="My Work - Portfollio.html"><img src="Myworks.png" alt=""></a>
+          <h3>My work - Portfollio</h3>
+          <p>初めて模写したサイトです。
+            <br>HTMLとCSSを使って作成しました。
+          </p>
+        </div>
+        <div class="container">
+          <a href="スニーカーショッピングサイト.html"><img src="gurume.png" alt=""></a>
+          <h3>スニーカーショッピングサイト</h3>
+          <p>次に模写したサイトです。
+            <br>HTML、CSS、Javascriptを使って作成しました。
+          </p>
+        </div>
+        <div class="container">
+          <a href="LPサイト.html"><img src="LPsite.png" alt=""></a>
+          <h3>LPサイト</h3>
+          <p>また次に模写したサイトです。
+            <br>HTMLとCSSを使って作成しました。
+          </p>
+        </div>
       </div>
-      <h3>スニーカー１</h3>
-      <p>スニーカーの説明です。<br>スニーカースニーカースニーカースニーカースニーカースニーカースニーカースニーカースニーカースニーカースニーカースニーカースニーカースニーカースニーカースニーカー</p>
-      <hr>
-      <p class>価格:￥1,000 <span class="tax">円（税込）</span></p>
-      <a href="" class="btn">購入</a>
-    </div>
-    <div class="hero animate sl">
-      <div class="gazo">
-        <img src="hero-2.jpg" alt="画像" width="100%" height="270">
-      </div>
-      <h3>スニーカー２</h3>
-      <p>スニーカーの説明です。<br>スニーカースニーカースニーカースニーカースニーカースニーカースニーカースニーカースニーカースニーカースニーカースニーカースニーカースニーカースニーカースニーカー</p>
-      <hr>
-      <p>価格:<span class="nike-2">￥2,000</span> <span class="tax">円（税込）</span>今なら=><span class="nike-2-2">1,430円</span>
-      </p>
-      <a href="" class="btn">購入</a>
-    </div>
-    <div class="hero animate sr">
-      <div class="gazo">
-        <img src="hero-3.jpg" alt="画像" width="100%" height="270">
-      </div>
-      <h3>スニーカー３</h3>
-      <p>スニーカーの説明です。<br>スニーカースニーカースニーカースニーカースニーカースニーカースニーカースニーカースニーカースニーカースニーカースニーカースニーカースニーカースニーカースニーカー</p>
-      <hr>
-      <p>価格:￥600 <span class="tax">円（税込）</span></p>
-      <a href="" class="btn">購入</a>
-    </div>
-    <div class="hero animate sl">
-      <div class="gazo">
-        <img src="hero-4.jpg" alt="画像" width="100%" height="270">
-      </div>
-      <h3>スニーカー４</h3>
-      <p>スニーカーの説明です。<br>スニーカースニーカースニーカースニーカースニーカースニーカースニーカースニーカースニーカースニーカースニーカースニーカースニーカースニーカースニーカースニーカー</p>
-      <hr>
-      <p>価格:￥1,300 <span class="tax">円（税込）</span></p>
-      <a href="" class="btn">購入</a>
-    </div>
-    <div class="hero animate sr">
-      <div class="gazo">
-        <img src="hero-5.jpg" alt="画像" width="100%" height="270">
-      </div>
-      <h3>スニーカー５</h3>
-      <p>スニーカーの説明です。<br>スニーカースニーカースニーカースニーカースニーカースニーカースニーカースニーカースニーカースニーカースニーカースニーカースニーカースニーカースニーカースニーカー</p>
-      <hr>
-      <p>価格:￥4,500 <span class="tax">円（税込）</span></p>
-      <a href="" class="btn">購入</a>
-    </div>
-    <div class="hero animate sl">
-      <div class="gazo">
-        <img src="hero-6.jpg" alt="画像" width="100%" height="270">
-      </div>
-      <h3>スニーカー６</h3>
-      <p>スニーカーの説明です。<br>スニーカースニーカースニーカースニーカースニーカースニーカースニーカースニーカースニーカースニーカースニーカースニーカースニーカースニーカースニーカースニーカー</p>
-      <hr>
-      <p>価格:￥6,780 <span class="tax">円（税込）</span></p>
-      <a href="" class="btn">購入</a>
     </div>
   </section>
-
-
+  <section class="skill animate sl">
+    <div class="width">
+      <h2 id="skill">SKILL</h2>
+      <div class="flex">
+        <div class="html">
+          <img src="html.jpg" alt="HTMLの画像">
+          <div>
+            <h3>HTML</h3>
+            <p>デザイン通り実装することができます。</p>
+          </div>
+        </div>
+        <div class="css">
+          <img src="css.jpg" alt="CSSの画像">
+          <div>
+            <h3>CSS</h3>
+            <p>HTML同様デザイン通り実装することができます。</p>
+          </div>
+        </div>
+        <div class="javascript">
+          <img src="javascript.jpg" alt="javascriptの画像">
+          <div>
+            <h3>javascript</h3>
+            <p>WEB制作で扱う動きの実装を扱うことができます。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="about animate sr">
+    <div class="width">
+      <h2 id="about">ABOUT</h2>
+      <div class="flex">
+        <img src="about.jpg" alt="自己紹介画像">
+        <div>
+          <h3>樋口　凌太 (Higuchi Ryota)</h3>
+          <p>人のために何かをすること、考えることが好きです。<br>
+            皆様の夢と希望の実現のお手伝いをさせてください。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="contact animate sl">
+    <div class="width">
+      <h2 id="contact">CONTACT</h2>
+      <p>お問い合わせはSNSかメールにてお願いいたします。</p>
+      <div>
+        <a href="https://www.instagram.com/guchiii___2222?igsh=c3cwenRhcHBvd2tm"><img src="icon-instagram.png" alt="SNSの画像"></a>
+        <p>pimanluse@gmail.com</p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <small>@Ryota Higuchi</small>
+  </footer>
 
   <script src="main.js"></script>
 </body>
